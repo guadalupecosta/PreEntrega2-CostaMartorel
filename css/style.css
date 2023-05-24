@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header > div {
+    height: 96px;
+    background-color: #19A7CE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.logo {
+    width: 100px;
+}
+
+ul {
+    display: flex;
+}
+
+nav > ul > li {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+li > a {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+main {
+    background-color: #98D8AA;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 15px 0;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.titulo-home {
+    padding-top: 22px;
+    line-height: 1;
+}
+
+.redes-sociales-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px 0;
+}
+
+.redes-sociales-items {
+    padding: 12px;
+    border: 2px solid #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.canotaje {
+    background-image: url(../assets/img/canotaje/canotaje-1.png);
+    background-position: center;
+    background-size: cover;
+    filter: opacity(50%);
+}
+
+.remo {
+    background-image: url(../assets/img/remo/remo-1.png);
+    background-position: center;
+    background-size: cover;
+    filter: opacity(50%);
+}
+
+.tria-aventura {
+    background-image: url(../assets/img/triaaventura/triaaventura-1.png);
+    background-position: center;
+    background-size: cover;
+    filter: opacity(50%);
+}
+
+.nuestro-club {
+    background-image: url(../assets/img/club/1.png);
+    background-position: center;
+    background-size: cover;
+    filter: opacity(50%);
+}
+
+p {
+    color: #FFF;
+    font-weight: 300;
+    padding: 0 10px;
+}
+
+.canotaje-div,
+.nuestro-club-div,
+.remo-div,
+.tria-aventura-div {
+    text-align: center;
+    background-color: #98D8AA;
+}
+
+.canotaje-div > img,
+.nuestro-club-div > img,
+.remo-div > img,
+.tria-aventura-div > img {
+    padding: 20px 0;
+}   
+
+.comision-container {
+    color: #FFF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.comision-container > div > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7d060;
+    color: #FFF;
+}
+
+footer > h3 {
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.footer-links {
+    border: 2px solid #FFF;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.footer-links:hover {
+    background-color: #f1c850;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    nav > ul > li {
+        padding: 40px 0;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .titulo-home {
+        padding-top: 46px;
+    }
+    .redes-sociales-items {
+        font-size: 26px;
+        padding: 24px;
+    }
+    footer {
+        padding: 40px;
+    }
+    footer > h3 {
+        font-size: 36px;
+        padding-bottom: 34px;
+    }
+    .footer-links {
+        padding: 16px;
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1400px) {
+    nav > ul > li {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 42px;
+    }
+}
